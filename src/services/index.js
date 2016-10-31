@@ -1,4 +1,5 @@
 'use strict';
+const notes = require('./notes');
 const todo = require('./todo');
 const authentication = require('./authentication');
 const user = require('./user');
@@ -12,4 +13,5 @@ module.exports = function() {
   app.configure(authentication);
   app.configure(user);
   app.configure(todo);
+  app.configure(notes);
 };
